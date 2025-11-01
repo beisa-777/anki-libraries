@@ -1,0 +1,28 @@
+{
+  "index": {
+    "Microeconomics": {
+      "供需理論（Supply and Demand）": "micro_supply_demand",
+      "效用理論（Utility Theory）": "micro_utility",
+      "成本函數（Cost Function）": "micro_cost"
+    },
+    "Macroeconomics": {
+      "IS-LM 模型": "macro_islm",
+      "菲利普曲線（Phillips Curve）": "macro_phillips",
+      "AD-AS 模型": "macro_adas"
+    },
+    "Econometrics": {
+      "迴歸模型（Regression Model）": "econ_regression",
+      "OLS 假設條件": "econ_ols_assumptions"
+    }
+  },
+  "content": {
+    "micro_supply_demand": "<div class='section'><div class='section-title'>供需理論（Supply and Demand）</div><div class='section-content'><p>市場價格取決於 <b>需求</b> 與 <b>供給</b> 的交點。<br>需求函數：$Q_d = a - bP$<br>供給函數：$Q_s = c + dP$<br>均衡價格：$P^* = \\frac{a - c}{b + d}$。</p></div></div>",
+    "micro_utility": "<div class='section'><div class='section-title'>效用理論（Utility Theory）</div><div class='section-content'><p>效用函數描述個體偏好，例如：<br>$$U(x,y) = x^\\alpha y^{1-\\alpha}$$<br>邊際替代率（MRS）：$MRS = \\frac{MU_x}{MU_y} = \\frac{\\partial U/\\partial x}{\\partial U/\\partial y}$。</p></div></div>",
+    "micro_cost": "<div class='section'><div class='section-title'>成本函數（Cost Function）</div><div class='section-content'><p>短期成本：$C = FC + VC(Q)$<br>平均成本（AC）：$AC = \\frac{C}{Q}$<br>邊際成本（MC）：$MC = \\frac{\\Delta C}{\\Delta Q}$<br>MC 與 AC 的交點 → AC 最低點。</p></div></div>",
+    "macro_islm": "<div class='section'><div class='section-title'>IS-LM 模型</div><div class='section-content'><p>IS 曲線：商品市場均衡<br>$$Y = C(Y-T) + I(r) + G$$<br>LM 曲線：貨幣市場均衡<br>$$M/P = L(r,Y)$$<br>交點為同時均衡的 $(Y^*, r^*)$。</p></div></div>",
+    "macro_phillips": "<div class='section'><div class='section-title'>菲利普曲線（Phillips Curve）</div><div class='section-content'><p>短期：通膨與失業存在反向關係<br>$$\\pi_t = \\pi_t^e - \\alpha (u_t - u^n)$$<br>長期：自然失業率假說成立 → 無取捨。</p></div></div>",
+    "macro_adas": "<div class='section'><div class='section-title'>AD-AS 模型</div><div class='section-content'><p>AD 代表總需求，AS 代表總供給。<br>AD：$Y = C + I + G + NX$<br>短期 AS 向上傾斜，長期 AS 垂直於潛在產出 $Y^*$。</p></div></div>",
+    "econ_regression": "<div class='section'><div class='section-title'>迴歸模型（Regression Model）</div><div class='section-content'><p>簡單線性模型：<br>$$Y_i = \\beta_0 + \\beta_1 X_i + u_i$$<br>估計式：$$\\hat{Y_i} = b_0 + b_1 X_i$$<br>目標：最小化平方誤差 $\\sum (Y_i - \\hat{Y_i})^2$。</p></div></div>",
+    "econ_ols_assumptions": "<div class='section'><div class='section-title'>OLS 假設條件</div><div class='section-content'><ul><li>線性關係：$Y = X\\beta + u$</li><li>$E(u|X)=0$（誤差無偏）</li><li>同方差性 $Var(u|X)=\\sigma^2$</li><li>無多重共線性</li><li>樣本隨機抽樣</li><li>無自我相關</li></ul><p>滿足這些條件 → OLS 具 BLUE 性質（Best Linear Unbiased Estimator）。</p></div></div>"
+  }
+}
